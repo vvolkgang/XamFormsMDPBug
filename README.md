@@ -4,7 +4,7 @@ This repository is a self contained app to demonstrate two possible bugs related
 
 # Bug report
 
-**Xamarin.Forms version:** 1.4
+**Xamarin.Forms version:** 1.4.2.6355
 
 - MDP button in the navigation is always a back button
 ![Main Page](images/backbutton_bug.png)
