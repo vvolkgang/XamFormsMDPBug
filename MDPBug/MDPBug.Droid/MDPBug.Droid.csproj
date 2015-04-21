@@ -86,6 +86,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\slideout.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\slideout.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\slideout.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\slideout.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MDPBug\MDPBug.csproj">

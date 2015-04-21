@@ -28,7 +28,7 @@ namespace MDPBug
         async Task NavigateLater()
         {
             bool clearBackstack = true;
-                await Task.Delay(2000);
+                await Task.Delay(10000);
                 await _navPage.PushAsync(new SecondPage(), true);
                 //    .ContinueWith(t =>
                 //{
