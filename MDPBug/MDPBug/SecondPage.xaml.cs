@@ -22,7 +22,11 @@ namespace MDPBug
         {
             base.OnAppearing();
             NavigationPage.SetHasBackButton(this, false);
-            NavigationPage.SetHasNavigationBar(this, false); //This is the only instruction that is having any effect, BUT, only when you navigate to the page. This doesn't work in the page that gets initialized
+
+            //This is the only instruction that is having any effect, BUT, only when you navigate to the page. 
+            //Doesn't work in the page that gets initialized
+            NavigationPage.SetHasNavigationBar(this, false); 
+
             NavigationPage.SetBackButtonTitle(this, "Badjoras");
         }
     }

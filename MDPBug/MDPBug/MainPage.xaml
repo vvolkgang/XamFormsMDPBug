@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MDPBug.MainPage"
              Title="Main Page">
-      <Label Text="Hello MasterDetailPage Bug" VerticalOptions="Center" HorizontalOptions="Center" />
+      <Label Text="Hello page with the back button bug" VerticalOptions="Center" HorizontalOptions="Center" />
 
 </ContentPage>
