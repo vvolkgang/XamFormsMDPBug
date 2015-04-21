@@ -22,6 +22,7 @@ This repo README.md will be updated with possible solutions when they're found.
       </MasterDetailPage.Master>
     </MasterDetailPage>
 ```
+![Back button fix](images/backbutton_bug_fix.png)
 
 # Bug report
 
