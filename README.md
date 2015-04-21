@@ -2,6 +2,27 @@
 
 This repository is a self contained app to demonstrate two possible bugs related to the navigation bar (in Android at least) when using `MasterDetailPage` (MDP).
 
+This repo README.md will be updated with possible solutions when they're found.
+
+## Solutions
+
+1. Following [FredrikNilsson](http://forums.xamarin.com/discussion/comment/118015/#Comment_118015) comment, to change the back button icon you need to set the Icon in the `MasterDetailPage.Master` page, instead of `MasterDetailPage`.
+```xml
+    <?xml version="1.0" encoding="utf-8" ?>
+    <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="MDPBug.MasterPage">
+      <MasterDetailPage.Master>
+        <ContentPage Title="Menu" Icon="slideout.png">
+            <StackLayout>
+                <Button Text="MenuItem1"/>
+                <Button Text="MenuItem1"/>
+            </StackLayout>
+        </ContentPage>
+      </MasterDetailPage.Master>
+    </MasterDetailPage>
+```
+
 # Bug report
 
 **Xamarin.Forms version:** 1.4.2.6355

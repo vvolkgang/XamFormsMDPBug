@@ -30,23 +30,10 @@ namespace MDPBug
             bool clearBackstack = true;
                 await Task.Delay(10000);
                 await _navPage.PushAsync(new SecondPage(), true);
-                //    .ContinueWith(t =>
-                //{
-                //    if (!t.IsFaulted && clearBackstack)
-                //    {
-                //        var nav = _navPage.Navigation;
-                //        do
-                //        {
-                //            nav.RemovePage(nav.NavigationStack[0]);
-                //        } while (nav.NavigationStack.Count != 1);
-                //    }
-
-                //});
 
                 NavigationPage.SetHasBackButton(_navPage, false);
                 NavigationPage.SetHasNavigationBar(_navPage, false);
                 NavigationPage.SetBackButtonTitle(_navPage, "Badjoras");
-
         }
 
     }
