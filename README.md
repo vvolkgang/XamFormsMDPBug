@@ -1,6 +1,6 @@
 #Xamarin.Forms MasterDetailPage navigation bar bug demonstration
 
-This repository is a self contained app to demonstrate two bugs related to the navigation bar (in Android at least) when using `MasterDetailPage` (MDP).
+This repository is a self contained app to demonstrate two possible bugs related to the navigation bar (in Android at least) when using `MasterDetailPage` (MDP).
 
 # Bug report
 
@@ -26,3 +26,5 @@ When you run the app you can confirm the first bug, 10 seconds later the app wil
 # Notes
 
 - The `NavigationPage` static set methods were abused through the app to demonstrate none of the alternatives work.
+- In `SecondPage.xaml.cs`,  using `NavigationPage.SetHasBackButton(this, false);` actually disables the navigation back button, enabling the user to use the MDP menu from the button. Nonetheless, the button icon is still the same.
+
